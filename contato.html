@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petshop - Contato</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+
         <!-- 
 
         Esse é um exercício em HTML. 
@@ -33,20 +38,132 @@
     <main>
         <section>
             <h2>Informações de Contato</h2>
-            <p>Entre em contato conosco para agendar serviços, tirar dúvidas ou fornecer feedback. Estamos aqui para ajudar!</p>
-            <p>Telefone: (XX) XXXX-XXXX</p>
-            <p>Email: contato@petshop.com</p>
+            <p><b>Entre em contato conosco para agendar serviços, tirar dúvidas ou fornecer feedback. Estamos aqui para ajudar!</b></p>
+            
         </section>
         <!-- 
-
             Adicionar um formulário de contato com campos para nome, email, telefone e mensagem.
 
         -->
+    <div class="formulario">
+        <form>
+            <label for="campo_nome"><b>Nome:</b></label><br>
+            <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required>
+            <br><br>
+            <label for="campo_Sobrenome"><b>Sobrenome:</b></label><br>
+            <input id="campo_Sobrenome" type="text" placeholder="Digite seu Sobrenome aqui" required>
+            <br><br>
+            <label for="campo_senha"><b>Senha:</b></label><br>
+            <input id="campo_senha" type="password" placeholder="Digite sua senha aqui" required>
+            <br><br>
+            <label for="campo_email"><b>Email:</b></label><br>
+            <input id="campo_email" type="email" placeholder="Digite seu email aqui" required>
+            <br><br>
+            <label for="campo_telefone"><b>Telefone:</b></label><br>
+            <input id="campo_telefone" type="tel" placeholder="Digite seu tefefone aqui" required>
+            <br><br>
+
+            <input type="submit" value="Enviar Formulário">
+        </form>    
+        </div>
+            <hr>
+            
+            <h2>Animal de Estimação</h2>
+
+        <form>
+            <input type="radio" id="dog" name="animal" value="Cachorro">
+            <label for="dog">Cachorro</label>
+            <br><br>
+
+            <input type="radio" id="cat" name="animal" value="Gato">
+            <label for="cat">Gato</label>
+            <br><br>
+
+            <input type="radio" id="bird" name="animal" value="Passarinho">
+            <label for="bird">Passarinho</label>
+            <br><br>
+
+            <input type="radio" id="hamster" name="animal" value="Rato">
+            <label for="hamster">Hamster</label>
+            <br><br>
+
+            <input type="submit" value="Enviar Formulário">
+        </form>
+            <hr>
+            
+
+            <h2>Alimentos e Acessórios</h2>
+
+        <form>
+            <input id="item1" type="checkbox" name="item1" value="ração_cachorro">
+            <label for="item1">Ração para cachorro</label>
+            <br>
+
+            <input id="item2" type="checkbox" name="item2" value="ração_gato">
+            <label for="item2">Ração para gato</label>
+            <br>
+
+            <input id="item3" type="checkbox" name="item3" value="ração_passarinho">
+            <label for="item3">Ração para passarinho</label>
+            <br>
+
+            <input id="item4" type="checkbox" name="item4" value="ração_hamster">
+            <label for="item4">Ração para hamster</label>
+            <br>
+
+            <input id="item5" type="checkbox" name="item5" value="casa_cachorro">
+            <label for="item5">Casinha para cachorro</label>
+            <br>
+
+            <input id="item6" type="checkbox" name="item6" value="casa_gato">
+            <label for="item6">Casinha para gato</label>
+            <br>
+
+            <input id="item7" type="checkbox" name="item7" value="Casa_hamster">
+            <label for="item7">Casinha para hamster</label><br><br>
+
+            <input type="submit" value="Enviar Formulário">
+        </form>
+            
+ 
+
+            <h2>Escolha um brinde da loja</h2>
+
+        <form>
+            <select name="brindes">
+                <option selected disabled value="selecione_um_brinde">Selecione um brinde</option>
+                <option value="osso_de_borracha">Osso de borracha</option>
+                <option value="coleira_de_couro">Coleira de couro</option>    
+                <option value="bola_de_borracha">Bola de borracha</option>
+                <option value="disco_de_plastico">Disco de plástico</option>
+                </select><br><br>
+
+                <input type="submit" value="Enviar Formulário">
+        </form>
+            
+
+        <form>
+            <h2>Digite sua mensagem:</h2>
+
+            <textarea name="mensagem" placeholder="Digite aqui sua mensagem" rows="15" cols="55"></textarea>
+            <br><br>
+
+            <input type="submit" value="Enviar Formulário">
+        </form>
+            <br>
+
+           
+        
+
     </main>
 
+    <div class="chatbot"></div>
+    <br><br><br><br>
+
     <!-- Rodapé -->
+    
     <footer>
-        <p></p>
+        <p>© 2024 PetShop Cadú. Todos os direitos reservados.</p>
     </footer>
 
     
